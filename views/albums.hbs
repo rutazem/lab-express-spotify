@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    {{!-- 
+    {{#each album}}
+
+    {{this.name}}
+    <img src="{{this.images.0.url}}" alt="">
+
+
+    {{/each}} --}}
+
+
+    {{#each items}}
+    <p>{{this.name}}</p>
+    <img src="{{this.images.[0].url}}">
+    {{/each}}
+
+    {{!-- 
+    <ul>
+        {{#each album}}
+        <li>{{this.name}}
+            <img src="{{this.images.0.url}}" alt="">
+            {{!-- 
+            <a href="/albums/{{this.id}}">View Albums</a> --}}
+    </li>
+    {{/each}}
+
+    </ul> --}}
+
+
+</body>
+
+</html>
